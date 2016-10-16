@@ -47,7 +47,7 @@ def fZ(X, Y, Z, sigma, r, b):
 
 def lorenz_solver(nt, dt, X0, Y0, Z0, sigma, r, b, scheme='da'):
     '''scheme:
-    da: double approx (used by Lorenz
+    da: double approx (used by Lorenz)
     ft: forward time
     rk4: Runge-Kutta 4th order'''
     if scheme not in ['da', 'ft', 'rk4']:
@@ -229,3 +229,4 @@ if __name__ == '__main__':
     chaos_demo(mode='IC')
     chaos_demo(mode='scheme', schemes=['da', 'rk4'])
     chaos_demo(mode='scheme', schemes=['da', 'ft'])
+    plt.show()
