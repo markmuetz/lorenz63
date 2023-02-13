@@ -7,7 +7,7 @@ import numpy as np
 import pylab as plt
 from scipy.signal import argrelextrema
 
-from plotting import plot_lorenz63_figures, plot_compare_Ys
+from .plotting import plot_lorenz63_figures, plot_compare_Ys
 
 
 def _lgp_format_number(x):
